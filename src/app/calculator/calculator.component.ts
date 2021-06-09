@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
   monthlyIncome: any = 100000;
-  monthlyExpense: any = 50000;
+  monthlyExpense: any = 0;
   constructor() { }
 
   ngOnInit(): void {

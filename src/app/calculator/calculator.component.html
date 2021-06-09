@@ -7,14 +7,14 @@
                 <p class="value">₹ {{ monthlyIncome | currency:'INR':'':'1.0'}}</p>
                 <input type="range" min="100000" max="300000"   id="sld1" (input) = "sliderChange($event)" [(ngModel)]="monthlyIncome">
                 <div class="slider-range">
-                    <p>{{100000| currency:'INR':'':'1.0'}}</p>
-                    <p>{{300000| currency:'INR':'':'1.0'}}</p>
+                    <p>₹ {{100000| currency:'INR':'':'1.0'}}</p>
+                    <p>₹ {{300000| currency:'INR':'':'1.0'}}</p>
                 </div>
             </div>
             <div class="input-container">
                 <p class="lable">Monthly Expense</p>
                 <p class="value">₹ {{ monthlyExpense | currency:'INR':'':'1.0'}}</p>
-                <input type="range" min="50000" max="100000" id="sld2" (input) = "sliderChange($event)" [(ngModel)]="monthlyExpense">
+                <input type="range" min="0" max="100000" id="sld2" (input) = "sliderChange($event)" [(ngModel)]="monthlyExpense">
             </div>
             <div class="input-container">
                 <p class="lable">Repayment Tenure</p>
