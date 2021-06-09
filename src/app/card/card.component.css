@@ -1,0 +1,30 @@
+.card {
+    background-color: #F9F9F9;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 20px #2321321F;
+    border-radius: 20px;
+    width: 90%;
+    margin: 3rem auto;
+    font-family: 'Montserrat-Regular';
+}
+
+.card:hover {
+    background-color: #66339980;
+}
+
+.card:hover .title, .card:hover  .contain {
+    color: #F9F9F9
+}
+
+
+
+.title {
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Montserrat-SemiBold';
+}
+.contain {
+    color: #999999;
+    font-size: 0.7rem;
+}

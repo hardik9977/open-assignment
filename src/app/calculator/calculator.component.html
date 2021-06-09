@@ -1,0 +1,55 @@
+<div class="main-container" >
+    <div class="cal">
+        <p class="title">Eligibility Calculator</p>
+        <div class="contain">
+            <div class="input-container">
+                <p class="lable">Monthly Income</p>
+                <p class="value">₹ {{ monthlyIncome | currency:'INR':'':'1.0'}}</p>
+                <input type="range" min="100000" max="300000"   id="sld1" (input) = "sliderChange($event)" [(ngModel)]="monthlyIncome">
+                <div class="slider-range">
+                    <p>{{100000| currency:'INR':'':'1.0'}}</p>
+                    <p>{{300000| currency:'INR':'':'1.0'}}</p>
+                </div>
+            </div>
+            <div class="input-container">
+                <p class="lable">Monthly Expense</p>
+                <p class="value">₹ {{ monthlyExpense | currency:'INR':'':'1.0'}}</p>
+                <input type="range" min="50000" max="100000" id="sld2" (input) = "sliderChange($event)" [(ngModel)]="monthlyExpense">
+            </div>
+            <div class="input-container">
+                <p class="lable">Repayment Tenure</p>
+                <select>
+                    <option value="6 Month">6 Month</option>
+                    <option value="9 Month">9 Month</option>
+                    <option value="1 Year">1 Year</option>
+                    <option value="3 Year">3 Year</option>
+                  </select>
+            </div>
+            <div class="exitsting-lon">
+                <p class="lable">Do you have any existing loans?</p>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="toggle round"></span>
+                  </label>
+            </div>
+            <div class="input-container">
+                <p class="lable">EMI of existing loan (optional) </p>
+                <input type="number" placeholder="₹ 15,000">
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="loan-field">
+            <p class="loan-title">Loan Amount</p>
+            <p class="loan-amount">₹ {{ 100000 | currency:'INR':'':'1.0'}}</p>
+        </div>
+        <div class="loan-field">
+            <p class="loan-title">Your EMI will be</p>
+            <p class="loan-amount">₹ {{ 15000 | currency:'INR':'':'1.0'}}</p>
+        </div>
+        <div class="loan-field">
+            <button class="get-money-btn">GET MONEY</button>
+        </div>
+    </div>
+</div>
+

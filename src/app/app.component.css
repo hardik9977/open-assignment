@@ -1,0 +1,74 @@
+.conatinar {
+    padding-top: 120px;
+    background-image: url(../assets/circle.png), url(../assets/blob-small.png), url(../assets/sol_wave_bg.png), url(../assets/accounting_dots.png),url(../assets/accounting_dots.png);
+    background-position: 200% -135%, -30% 10%, 0 100% , 30% 35%, 85% 45%;
+    background-repeat: no-repeat;
+    background-size: 80%, auto, 100%, 20%, 20%;
+}
+.row {
+    width: 84%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.col-50 {
+    /* flex: 1 0 50%; */
+    width: 50%;
+}
+
+.collect-img {
+    width: 400px;
+    height: 200px;
+    margin-top: 3rem;
+}
+
+.collect-cap {
+    font-family: 'Montserrat-Medium';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222222;
+    line-height: 2rem;
+    padding-left: 4rem;
+}
+.collect-cap p {
+    margin: 0px;
+}
+
+.collect-cap hr{
+    height: 4px;
+    background-color: #000000;
+    border: 0;
+    width: 20%;
+    margin-left: 0;
+    opacity: 0.7;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.collect-cap-contain {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #777777;
+}
+
+.collect-cap .btn {
+        border: 2px solid #663399;
+        border-radius: 24px;
+        background-color: transparent;
+        color: #663399;
+        padding: 7px 20px;
+        margin-top: 2.5rem;
+}
+
+.collect-cap .btn:hover {
+    background-color:  #663399;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+
